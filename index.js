@@ -1,7 +1,9 @@
 // index.js (使用 extension_settings 存储并包含自动迁移)
 import { extension_settings, loadExtensionSettings, getContext } from "../../../extensions.js";
 // 尝试导入全局列表，路径可能需要调整！如果导入失败，迁移逻辑需要改用 API 调用
-import { saveSettingsDebounced, eventSource, event_types, getRequestHeaders, characters, groups } from "../../../../script.js";
+import { saveSettingsDebounced, eventSource, event_types, getRequestHeaders, characters } from "../../../../script.js";
+
+import { groups } from "../../../GROUP-chats.js";
 
 const extensionName = "hideA";
 const defaultSettings = {
