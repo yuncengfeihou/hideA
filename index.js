@@ -3,7 +3,7 @@ import { extension_settings, loadExtensionSettings, getContext } from "../../../
 // 尝试导入全局列表，路径可能需要调整！如果导入失败，迁移逻辑需要改用 API 调用
 import { saveSettingsDebounced, eventSource, event_types, getRequestHeaders, characters } from "../../../../script.js";
 
-import { groups } from "../../../GROUP-chats.js";
+import { groups } from "../../../group-chats.js";
 
 const extensionName = "hideA";
 const defaultSettings = {
